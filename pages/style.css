@@ -446,7 +446,7 @@ template {
   }
 }
 .header__phone {
-  background-image: url(../../images/123451.png);
+  background-image: url(../images/123451.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -903,7 +903,7 @@ template {
   }
 }
 .footer__phone {
-  background-image: url(../../images/123455.png);
+  background-image: url(../images/123455.png);
   bottom: 153px;
   max-width: 311px;
   width: 100%;
