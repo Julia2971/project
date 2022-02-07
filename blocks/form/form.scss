@@ -1,0 +1,135 @@
+.form{
+    background-color:  rgba(248, 248, 248, 1);
+    box-sizing: border-box;
+    min-height: 614px;
+    max-width: 1100px;
+    width: 100%;
+    text-align: right;
+    
+
+    &__title{
+        font-family: $fonts;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        padding: 60px 0px 20px 0px;
+        max-width: 500px;
+        margin: 0 auto;
+        color:  rgba(17, 17, 17, 1);
+        ;
+
+
+        @media screen and (max-width: 650px){
+            padding: 20px 0;
+        }
+    }
+
+    &__subtitle{
+        font-family: $fonts;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(17, 17, 17, 0.6);
+        margin: 0 auto;
+        ;
+
+
+
+        @media screen and (max-width: 650px){
+            padding: 20px 0;
+        }
+    }
+
+    &__container {
+        max-width: 980px;
+        margin: 100px auto 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px 40px;
+        border: none;
+
+
+        @media screen and (max-width: 650px){
+            margin-top: 80px;
+        }
+
+    }
+
+    &__input {
+        background-color: rgba(255, 255, 255, 1);
+        max-width: 470px;
+        width: 100%;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-family: $fonts;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(17, 17, 17, 0.3);
+        margin: 0 auto;
+
+        &_textarea{
+            width: 100%;
+            max-width: 980px;
+            height: 130px;
+
+
+            @media screen and (max-width: 1345px){
+                max-width: 470px;
+            }
+        }
+
+
+    }
+
+
+    &__submit{
+        background: rgba(34, 34, 34, 1);
+        width: 194px;
+        height: 54px;
+        margin: 30px 60px 60px 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color:  rgba(255, 255, 255, 1);
+        font-family: $fonts;
+        border: none;
+        border-radius: 8px;
+
+
+
+        @media screen and (max-width: 1000px){
+            height: 48px;
+            max-width: 470px;
+            width: 100%;
+            margin: 50px 119px 30px 119px;
+        }
+
+        @media screen and (max-width: 650px){
+            margin: 50px auto 20px auto;
+           
+        }
+
+
+
+
+    }
+
+
+    @media screen and (max-width: 1000px){
+        max-width: 708px;
+        min-height: 611px;
+        margin: auto;
+    }
+    @media screen and (max-width: 650px){
+        min-width: 300px;
+        min-height: 614px;
+        border-radius: 10px;
+    }
+}
