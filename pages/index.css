@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import '../vendor/fonts/fonts.css';
 html {
   line-height: 1.15;
   /* 1 */
@@ -338,34 +339,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "inter";
-  font-style: normal;
-  font-weight: 400;
-  src: url("./Inter-Regular.woff") format("woff");
-  src: url("./Inter-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: "inter";
-  font-style: normal;
-  font-weight: 500;
-  src: url("./Inter-Medium.woff") format("woff");
-  src: url("./Inter-Medium.woff2") format("woff2");
-}
-@font-face {
-  font-family: "inter";
-  font-style: normal;
-  font-weight: 600;
-  src: url("./Inter-SemiBold.woff") format("woff");
-  src: url("./Inter-SemiBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "inter";
-  font-style: normal;
-  font-weight: 900;
-  src: url("./Inter-Black.woff") format("woff");
-  src: url("./Inter-Black.woff2") format("woff2");
-}
 .header {
   background-color: #222222;
   margin: 10px 10px 0px 10px;
@@ -512,6 +485,9 @@ template {
 
 .content {
   padding: 60px 170px 120px 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (max-width: 1000px) {
   .content {
@@ -525,8 +501,8 @@ template {
   max-width: 1100px;
 }
 .cards__item {
-  width: 540px;
-  height: 308px;
+  max-width: 540px;
+  min-height: 308px;
   box-sizing: border-box;
   background-color: #F8F8F8;
   padding: 40px;
@@ -535,7 +511,7 @@ template {
 @media screen and (max-width: 950px) {
   .cards__item {
     padding: 30px;
-    width: 349px;
+    max-width: 349px;
     height: 284px;
   }
 }
@@ -578,11 +554,11 @@ template {
     line-height: 31px;
   }
 }
-.cards__title_more {
+.cards__title_type_more {
   padding-bottom: 78px;
 }
 @media screen and (max-width: 1100px) {
-  .cards__title_more {
+  .cards__title_type_more {
     padding-bottom: 50px;
   }
 }
@@ -700,9 +676,16 @@ template {
   margin: 0 auto;
   color: #111111;
 }
+@media screen and (max-width: 1000px) {
+  .form__title {
+    padding: 30px 0px 24px 0px;
+  }
+}
 @media screen and (max-width: 650px) {
   .form__title {
-    padding: 20px 0;
+    font-size: 26px;
+    line-height: 31px;
+    padding: 20px 0 0 0;
   }
 }
 .form__subtitle {
@@ -717,6 +700,8 @@ template {
 @media screen and (max-width: 650px) {
   .form__subtitle {
     padding: 20px 0;
+    font-size: 15px;
+    line-height: 20px;
   }
 }
 .form__container {
@@ -748,13 +733,13 @@ template {
   color: rgba(17, 17, 17, 0.3);
   margin: 0 auto;
 }
-.form__input_textarea {
+.form__input_type_textarea {
   width: 100%;
   max-width: 980px;
   height: 130px;
 }
 @media screen and (max-width: 1345px) {
-  .form__input_textarea {
+  .form__input_type_textarea {
     max-width: 470px;
   }
 }
@@ -794,7 +779,7 @@ template {
 }
 @media screen and (max-width: 650px) {
   .form {
-    min-width: 300px;
+    max-width: 300px;
     min-height: 614px;
     border-radius: 10px;
   }
@@ -937,4 +922,4 @@ template {
     height: 266px;
     padding: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=index.css.map */
