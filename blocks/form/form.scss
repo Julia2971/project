@@ -19,9 +19,14 @@
         color:  rgba(17, 17, 17, 1);
         ;
 
+        @media screen and (max-width: 1000px){
+           padding: 30px 0px 24px 0px;
+        }
 
         @media screen and (max-width: 650px){
-            padding: 20px 0;
+            font-size: 26px;
+            line-height: 31px;
+            padding: 20px 0 0 0 ;
         }
     }
 
@@ -39,6 +44,8 @@
 
         @media screen and (max-width: 650px){
             padding: 20px 0;
+            font-size: 15px;
+            line-height: 20px;
         }
     }
 
@@ -73,7 +80,7 @@
         color: rgba(17, 17, 17, 0.3);
         margin: 0 auto;
 
-        &_textarea{
+        &_type_textarea{
             width: 100%;
             max-width: 980px;
             height: 130px;
@@ -128,7 +135,7 @@
         margin: auto;
     }
     @media screen and (max-width: 650px){
-        min-width: 300px;
+        max-width: 300px;
         min-height: 614px;
         border-radius: 10px;
     }
